@@ -1,0 +1,113 @@
+body{
+  background: url(wall.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+
+}
+ul{
+  margin: auto;
+  width: 70%;
+  padding: 0px;
+  list-style: none;
+}
+ul li{
+  float: left;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  opacity: .8;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  margin: auto;
+
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+ul li a:hover {
+  background-color: navy;
+}
+ul li ul li {
+  display: none;
+}
+ul li:hover ul li {
+  display: block;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form{
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+}
+
+.input-field,
+.msg{
+  width: 48%;
+}
+.input-field .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.msg textarea{
+  height: 212px;
+}
+::-webkit-input-placeholder{
+  color: white;
+}
+::-moz-input-placeholder{
+  color: white;
+}
+::-ms-input-placeholder{
+  color: white;
+}
+.btn{
+  background: black;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-field,
+  .msg{
+    width: 100%;
+  }
+}
